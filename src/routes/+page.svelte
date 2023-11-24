@@ -5,7 +5,6 @@
 
 	let chosenMons = [];
 	let name = '6';
-
 	function addPokemon(input) {
 		if (input != '') {
 			chosenMons = [...chosenMons, input];
@@ -15,6 +14,7 @@
 </script>
 
 <body>
+	<h1 class="text-3xl font-bold underline">HI</h1>
 	<div id="input-field">
 		<input bind:value={name} />
 		<button on:click={addPokemon(name)}>Check pokemon</button>
@@ -31,9 +31,8 @@
         background-color: #28223f;
     }
 
-	.input-field {
+	body .input-field {
 		font-family: Montserrat, sans-serif;
-
 		display: flex;
 		align-items: center;
 		justify-content: center;
