@@ -25,7 +25,7 @@
 </script>
 
 <div class="card-container">
-	<img class="round" src={imgUrl} alt="user" />
+	<img class="relative object-center" src={imgUrl} alt="user" />
 	<h2>{pokemonName}</h2>
 	<p>
 		{#if raidDate != undefined}
@@ -48,6 +48,7 @@
 </div>
 
 <style>
+	
 	.card-container {
 	background-color: #231E39;
 	border-radius: 5px;

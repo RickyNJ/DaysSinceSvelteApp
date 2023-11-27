@@ -15,6 +15,7 @@
 
 <body>
 	<h1 class="text-3xl font-bold underline">HI</h1>
+
 	<div id="input-field">
 		<input bind:value={name} />
 		<button on:click={addPokemon(name)}>Check pokemon</button>
@@ -30,15 +31,4 @@
     body {
         background-color: #28223f;
     }
-
-	body .input-field {
-		font-family: Montserrat, sans-serif;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-
-		min-height: 100vh;
-		margin: 0;
-	}
 </style>
